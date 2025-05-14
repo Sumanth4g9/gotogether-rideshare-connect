@@ -63,13 +63,13 @@ const RideCard: React.FC<RideCardProps> = ({
 
   return (
     <Card className="w-full animate-fade-in">
-      <CardHeader className="bg-accent rounded-t-lg">
+      <CardHeader className="bg-blue-50 rounded-t-lg">
         <div className="flex justify-between items-start">
           <div>
             <CardTitle className="text-lg font-bold">{name}</CardTitle>
             <CardDescription>Contact: {contact}</CardDescription>
           </div>
-          <div className="px-3 py-1 bg-goto-purple text-white text-xs rounded-full">
+          <div className="px-3 py-1 bg-blue-500 text-white text-xs rounded-full">
             {vehicle}
           </div>
         </div>
@@ -109,7 +109,7 @@ const RideCard: React.FC<RideCardProps> = ({
       <CardFooter className="flex gap-2 border-t pt-4">
         <Dialog>
           <DialogTrigger asChild>
-            <Button variant="outline" className="w-1/2 text-goto-purple border-goto-purple hover:bg-goto-purple hover:text-white">
+            <Button variant="outline" className="w-1/2 text-blue-600 border-blue-600 hover:bg-blue-600 hover:text-white">
               Request
             </Button>
           </DialogTrigger>

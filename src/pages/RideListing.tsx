@@ -201,7 +201,7 @@ const RideListing = () => {
                       </Select>
                     </div>
                     <div className="flex flex-col gap-2 pt-2">
-                      <Button className="w-full bg-blue-600 hover:bg-blue-700" onClick={handleSearch}>Apply Filters</Button>
+                      <Button className="w-full bg-blue-500 hover:bg-blue-600" onClick={handleSearch}>Apply Filters</Button>
                       <Button variant="outline" onClick={handleClear} className="w-full">Clear Filters</Button>
                     </div>
                   </div>
@@ -238,11 +238,11 @@ const RideListing = () => {
               
               {/* Create Your Own Post CTA */}
               <div className="bg-blue-50 p-6 rounded-lg text-center mt-6 border border-blue-100">
-                <h3 className="text-xl font-bold mb-2 text-blue-700">Looking to offer a ride instead?</h3>
+                <h3 className="text-xl font-bold mb-2 text-blue-600">Looking to offer a ride instead?</h3>
                 <p className="text-gray-600 mb-4 max-w-2xl mx-auto">
                   Create your own post and let others find you. Share your daily commute and split the costs!
                 </p>
-                <Button className="bg-blue-600 hover:bg-blue-700">Create Your Ride Post</Button>
+                <Button className="bg-blue-500 hover:bg-blue-600">Create Your Ride Post</Button>
               </div>
             </div>
           </div>
