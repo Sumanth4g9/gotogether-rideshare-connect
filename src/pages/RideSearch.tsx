@@ -75,7 +75,7 @@ const RideSearch = () => {
   const [pickup, setPickup] = useState("");
   const [drop, setDrop] = useState("");
   const [travelType, setTravelType] = useState("");
-  const [gender, setGender] = useState("");
+  const [gender, setGender] = useState("any"); // Changed default value to "any" instead of ""
   const [vehicle, setVehicle] = useState("");
   const [filteredRides, setFilteredRides] = useState(sampleRides);
   const { toast } = useToast();
@@ -102,7 +102,7 @@ const RideSearch = () => {
       );
     }
     
-    if (gender) {
+    if (gender && gender !== "any") { // Modified to check for "any" instead of empty string
       results = results.filter(ride => 
         !ride.preferredGender || ride.preferredGender === gender
       );
@@ -120,7 +120,7 @@ const RideSearch = () => {
     setPickup("");
     setDrop("");
     setTravelType("");
-    setGender("");
+    setGender("any"); // Changed to "any" instead of ""
     setVehicle("");
     setFilteredRides(sampleRides);
   };
@@ -173,7 +173,7 @@ const RideSearch = () => {
                     <SelectValue placeholder="Any" />
                   </SelectTrigger>
                   <SelectContent>
-                    <SelectItem value="">Any</SelectItem>
+                    <SelectItem value="any">Any</SelectItem> {/* Changed from "" to "any" */}
                     <SelectItem value="Male">Male</SelectItem>
                     <SelectItem value="Female">Female</SelectItem>
                   </SelectContent>
@@ -186,7 +186,7 @@ const RideSearch = () => {
                     <SelectValue placeholder="Any vehicle" />
                   </SelectTrigger>
                   <SelectContent>
-                    <SelectItem value="">Any</SelectItem>
+                    <SelectItem value="any">Any</SelectItem> {/* Changed from "" to "any" */}
                     <SelectItem value="Car">Car</SelectItem>
                     <SelectItem value="Bike">Bike</SelectItem>
                   </SelectContent>
