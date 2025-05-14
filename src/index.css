@@ -14,16 +14,16 @@
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 265 66% 62%;
+    --primary: 217 91% 60%;
     --primary-foreground: 210 40% 98%;
 
-    --secondary: 260 40% 96.1%;
+    --secondary: 210 40% 96.1%;
     --secondary-foreground: 222.2 47.4% 11.2%;
 
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
 
-    --accent: 265 66% 95%;
+    --accent: 217 91% 95%;
     --accent-foreground: 222.2 47.4% 11.2%;
 
     --destructive: 0 84.2% 60.2%;
@@ -31,7 +31,7 @@
 
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
-    --ring: 265 66% 62%;
+    --ring: 217 91% 60%;
 
     --radius: 0.5rem;
 
@@ -55,7 +55,7 @@
     --popover: 222.2 84% 4.9%;
     --popover-foreground: 210 40% 98%;
 
-    --primary: 265 66% 62%;
+    --primary: 217 91% 60%;
     --primary-foreground: 222.2 47.4% 11.2%;
 
     --secondary: 217.2 32.6% 17.5%;
@@ -72,7 +72,7 @@
 
     --border: 217.2 32.6% 17.5%;
     --input: 217.2 32.6% 17.5%;
-    --ring: 265 66% 62%;
+    --ring: 217 91% 60%;
     
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
@@ -96,6 +96,6 @@
 }
 
 .hero-gradient {
-  background: linear-gradient(to right, rgba(126, 105, 171, 0.9), rgba(110, 89, 165, 0.8)), 
+  background: linear-gradient(to right, rgba(37, 99, 235, 0.9), rgba(59, 130, 246, 0.8)), 
               url('https://images.unsplash.com/photo-1556122071-e404cb6596e0?q=80&w=1600&auto=format&fit=crop') no-repeat center/cover;
 }
