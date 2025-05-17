@@ -12,17 +12,17 @@ const Navbar = () => {
     <nav className="bg-white shadow-sm py-4">
       <div className="container mx-auto px-4 flex justify-between items-center">
         <Link to="/" className="flex items-center gap-2">
-          <span className="text-blue-600 font-bold text-2xl">GoTogethrRides</span>
+          <span className="text-goto-purple font-bold text-2xl">GoTogethrRides</span>
         </Link>
 
         <div className="hidden md:flex items-center gap-6">
-          <Link to="/" className="text-gray-700 hover:text-blue-600 transition-colors">
+          <Link to="/" className="text-gray-700 hover:text-goto-purple transition-colors">
             Home
           </Link>
-          <Link to="/travel-types" className="text-gray-700 hover:text-blue-600 transition-colors">
+          <Link to="/travel-types" className="text-gray-700 hover:text-goto-purple transition-colors">
             Travel Types
           </Link>
-          <Link to="/rides" className="text-gray-700 hover:text-blue-600 transition-colors">
+          <Link to="/search" className="text-gray-700 hover:text-goto-purple transition-colors">
             Find Rides
           </Link>
         </div>
@@ -47,7 +47,7 @@ const Navbar = () => {
                 </Button>
               </Link>
               <Link to="/signup">
-                <Button variant="default" size="sm" className="flex items-center gap-1 bg-blue-600 hover:bg-blue-700">
+                <Button variant="default" size="sm" className="flex items-center gap-1">
                   <UserPlus size={16} />
                   <span className="hidden md:inline">Sign Up</span>
                 </Button>
