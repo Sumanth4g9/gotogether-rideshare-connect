@@ -130,7 +130,7 @@ const RideListing = () => {
     <Layout>
       <div className="py-8 px-4">
         <div className="container mx-auto max-w-6xl">
-          <h1 className="text-3xl font-bold mb-2 text-goto-purple">Available Ride Partners</h1>
+          <h1 className="text-3xl font-bold mb-2 text-blue-600">Available Ride Partners</h1>
           <p className="text-gray-600 mb-8">Find riders matching your travel needs</p>
           
           <div className="grid grid-cols-1 lg:grid-cols-4 gap-6">
@@ -138,7 +138,7 @@ const RideListing = () => {
             <div className="lg:col-span-1">
               <div className="bg-white shadow-md rounded-lg p-4 sticky top-20">
                 <div className="mb-4">
-                  <h2 className="font-semibold text-lg mb-4 text-goto-purple flex items-center">
+                  <h2 className="font-semibold text-lg mb-4 text-blue-600 flex items-center">
                     <Search size={18} className="mr-2" />
                     Filter Results
                   </h2>
@@ -201,7 +201,7 @@ const RideListing = () => {
                       </Select>
                     </div>
                     <div className="flex flex-col gap-2 pt-2">
-                      <Button className="w-full bg-goto-purple hover:bg-goto-purple-dark" onClick={handleSearch}>Apply Filters</Button>
+                      <Button className="w-full bg-blue-600 hover:bg-blue-700" onClick={handleSearch}>Apply Filters</Button>
                       <Button variant="outline" onClick={handleClear} className="w-full">Clear Filters</Button>
                     </div>
                   </div>
@@ -237,12 +237,12 @@ const RideListing = () => {
               )}
               
               {/* Create Your Own Post CTA */}
-              <div className="bg-gray-50 p-6 rounded-lg text-center mt-6 border border-gray-200">
-                <h3 className="text-xl font-bold mb-2 text-goto-purple">Looking to offer a ride instead?</h3>
+              <div className="bg-blue-50 p-6 rounded-lg text-center mt-6 border border-blue-100">
+                <h3 className="text-xl font-bold mb-2 text-blue-700">Looking to offer a ride instead?</h3>
                 <p className="text-gray-600 mb-4 max-w-2xl mx-auto">
                   Create your own post and let others find you. Share your daily commute and split the costs!
                 </p>
-                <Button className="bg-goto-purple hover:bg-goto-purple-dark">Create Your Ride Post</Button>
+                <Button className="bg-blue-600 hover:bg-blue-700">Create Your Ride Post</Button>
               </div>
             </div>
           </div>
