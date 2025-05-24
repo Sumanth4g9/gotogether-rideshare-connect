@@ -12,18 +12,18 @@ const Navbar = () => {
     <nav className="bg-white shadow-sm py-4">
       <div className="container mx-auto px-4 flex justify-between items-center">
         <Link to="/" className="flex items-center gap-2">
-          <span className="text-goto-purple font-bold text-2xl">GoTogethrRides</span>
+          <span className="text-goto-purple font-bold text-2xl">RequirementHub</span>
         </Link>
 
         <div className="hidden md:flex items-center gap-6">
           <Link to="/" className="text-gray-700 hover:text-goto-purple transition-colors">
             Home
           </Link>
-          <Link to="/travel-types" className="text-gray-700 hover:text-goto-purple transition-colors">
-            Travel Types
-          </Link>
-          <Link to="/search" className="text-gray-700 hover:text-goto-purple transition-colors">
-            Find Rides
+          <a href="#requirement-form" className="text-gray-700 hover:text-goto-purple transition-colors">
+            Post Requirement
+          </a>
+          <Link to="#" className="text-gray-700 hover:text-goto-purple transition-colors">
+            How It Works
           </Link>
         </div>
 
