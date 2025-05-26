@@ -63,7 +63,7 @@ const RideCard: React.FC<RideCardProps> = ({
 
   return (
     <Card className="w-full animate-fade-in">
-      <CardHeader className="bg-accent rounded-t-lg">
+      <CardHeader className="bg-gray-50 rounded-t-lg">
         <div className="flex justify-between items-start">
           <div>
             <CardTitle className="text-lg font-bold">{name}</CardTitle>
