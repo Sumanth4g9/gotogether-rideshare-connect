@@ -22,7 +22,7 @@ const Navbar = () => {
           <Link to="/travel-types" className="text-gray-700 hover:text-goto-purple transition-colors">
             Travel Types
           </Link>
-          <Link to="/rides" className="text-gray-700 hover:text-goto-purple transition-colors">
+          <Link to="/search" className="text-gray-700 hover:text-goto-purple transition-colors">
             Find Rides
           </Link>
         </div>
@@ -47,7 +47,7 @@ const Navbar = () => {
                 </Button>
               </Link>
               <Link to="/signup">
-                <Button variant="default" size="sm" className="flex items-center gap-1 bg-goto-purple hover:bg-goto-purple-dark">
+                <Button variant="default" size="sm" className="flex items-center gap-1">
                   <UserPlus size={16} />
                   <span className="hidden md:inline">Sign Up</span>
                 </Button>

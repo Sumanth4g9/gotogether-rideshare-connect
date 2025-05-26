@@ -16,8 +16,8 @@ const Index = () => {
 
   return (
     <Layout>
-      {/* Hero Section with Blue Theme */}
-      <section className="bg-gradient-to-r from-blue-700 to-blue-500 text-white py-20 md:py-32">
+      {/* Hero Section */}
+      <section className="hero-gradient text-white py-20 md:py-32">
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-6 md:mb-8">
             Find Riders & Partners for Your Next Ride
@@ -26,13 +26,13 @@ const Index = () => {
             Daily commutes, weekend trips, or state travel – connect with like-minded travelers
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <Link to="/rides">
-              <Button size="lg" className="w-full md:w-auto bg-white text-blue-700 hover:bg-gray-100">
+            <Link to="/search">
+              <Button size="lg" className="w-full md:w-auto bg-white text-goto-purple hover:bg-gray-100">
                 Find a Ride Partner
               </Button>
             </Link>
             <Link to="/travel-types">
-              <Button size="lg" variant="outline" className="w-full md:w-auto border-white text-white hover:bg-white hover:text-blue-700">
+              <Button size="lg" variant="outline" className="w-full md:w-auto border-white text-white hover:bg-white hover:text-goto-purple">
                 Offer a Ride
               </Button>
             </Link>
@@ -43,20 +43,20 @@ const Index = () => {
       {/* How It Works */}
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-12 text-blue-700">How GoTogethrRides Works</h2>
+          <h2 className="text-3xl font-bold text-center mb-12">How GoTogethrRides Works</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="text-center">
-              <div className="bg-blue-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 text-white font-bold text-xl">1</div>
+              <div className="bg-goto-purple w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 text-white font-bold text-xl">1</div>
               <h3 className="text-xl font-semibold mb-2">Select Your Travel Type</h3>
               <p className="text-gray-600">Choose between daily commutes, occasional rides, or long trips</p>
             </div>
             <div className="text-center">
-              <div className="bg-blue-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 text-white font-bold text-xl">2</div>
+              <div className="bg-goto-purple w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 text-white font-bold text-xl">2</div>
               <h3 className="text-xl font-semibold mb-2">Find Compatible Partners</h3>
               <p className="text-gray-600">Browse profiles and find travel partners with similar routes</p>
             </div>
             <div className="text-center">
-              <div className="bg-blue-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 text-white font-bold text-xl">3</div>
+              <div className="bg-goto-purple w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 text-white font-bold text-xl">3</div>
               <h3 className="text-xl font-semibold mb-2">Connect and Ride</h3>
               <p className="text-gray-600">Message, plan, and start sharing rides to save costs together</p>
             </div>
@@ -67,7 +67,7 @@ const Index = () => {
       {/* Popular States */}
       <section className="py-16">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-4 text-blue-700">Popular States with High Travel Activity</h2>
+          <h2 className="text-3xl font-bold text-center mb-4">Popular States with High Travel Activity</h2>
           <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
             Discover the most active regions where riders are connecting and sharing journeys every day
           </p>
@@ -87,8 +87,8 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Ride Benefits - Changed to blue */}
-      <section className="py-16 bg-blue-600 text-white">
+      {/* Ride Benefits */}
+      <section className="py-16 bg-goto-purple text-white">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-12">Why Share Your Ride?</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -114,16 +114,16 @@ const Index = () => {
       {/* CTA */}
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold mb-6 text-blue-700">Ready to Share Your Journey?</h2>
+          <h2 className="text-3xl font-bold mb-6">Ready to Share Your Journey?</h2>
           <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
             Join thousands of commuters who are saving money, reducing emissions, and making connections every day.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
             <Link to="/signup">
-              <Button size="lg" className="w-full md:w-auto bg-blue-600 hover:bg-blue-700">Get Started Now</Button>
+              <Button size="lg" className="w-full md:w-auto">Get Started Now</Button>
             </Link>
             <Link to="/travel-types">
-              <Button size="lg" variant="outline" className="w-full md:w-auto border-blue-600 text-blue-600 hover:bg-blue-50">
+              <Button size="lg" variant="outline" className="w-full md:w-auto">
                 Explore Travel Types
               </Button>
             </Link>
